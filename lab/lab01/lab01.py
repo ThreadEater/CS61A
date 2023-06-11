@@ -41,6 +41,7 @@ def divisible_by_k(n, k):
     >>> c
     0
     """
+    
     count = n//k
     for i in range(k,n+1,k):
         print(i)
