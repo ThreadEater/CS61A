@@ -63,6 +63,13 @@ def count_cond(condition):
     8
     """
     "*** YOUR CODE HERE ***"
+    def counter(n1):
+        count = 0
+        for i in range(1,n1+1):
+            if condition(n1,i):
+                count += 1 
+        return count
+    return counter
 
 
 
@@ -75,6 +82,14 @@ def multiple(a, b):
     42
     """
     "*** YOUR CODE HERE ***"
+    if (a<b):
+        a,b=b,a
+    def gcd(x,y):
+        if (x%y==0):
+            return y
+        else:
+            return gcd(y,x%y)
+    return int(a*b/gcd(a,b))
 
 
 def cycle(f1, f2, f3):
@@ -104,3 +119,4 @@ def cycle(f1, f2, f3):
     19
     """
     "*** YOUR CODE HERE ***"
+    
