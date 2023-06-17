@@ -119,4 +119,24 @@ def cycle(f1, f2, f3):
     19
     """
     "*** YOUR CODE HERE ***"
-    
+    def func(n):
+        def times(n,x):
+            while True:
+                if (n>0):
+                    x=f1(x)
+                    n-=1
+                else:
+                    break
+                if (n>0):
+                    x=f2(x)
+                    n-=1
+                else:
+                    break
+                if (n>0):
+                    x=f3(x)
+                    n-=1
+                else:
+                    break
+            return x
+        return lambda x:times(n,x)
+    return func
