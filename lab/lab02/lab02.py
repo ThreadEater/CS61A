@@ -65,6 +65,7 @@ def count_cond(condition):
     "*** YOUR CODE HERE ***"
 
 
+
 def multiple(a, b):
     """Return the smallest number n that is a multiple of both a and b.
 
