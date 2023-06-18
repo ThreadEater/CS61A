@@ -29,7 +29,7 @@ def ordered_digits(x):
 
     """
     "*** YOUR CODE HERE ***"
-
+    
 
 def get_k_run_starter(n, k):
     """Returns the 0th digit of the kth increasing run within n.
